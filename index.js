@@ -2,7 +2,7 @@ import express from "express";
 import pureimage from "pureimage";
 import fs from 'fs';
 const app=express();
-const PORT=5432||process.env.PORT;
+const PORT=process.env.PORT||5432;
 app.
 all('/login',r=>{
     r.res.send('itmo2021');
@@ -19,8 +19,9 @@ console.log(req.query);
     // fill with black
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, 100, 100);
-  
-    //write black image or black square by default (we can save only binary too, without extension)
+     /*encodePNGToStream(bitmap: Bitmap, outstream: Stream): Promise<void>
+
+        Encode the PNG image to output stream */
     pureimage.encodePNGToStream(img, fs.createWriteStream("makeimage.png"))
       .then(() => {
         res.download("makeimage.png");

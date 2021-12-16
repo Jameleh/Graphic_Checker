@@ -1,0 +1,29 @@
+{
+  "name": "graphic_checker",
+  "version": "1.0.0",
+  "description": "\"checkinator ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jameleh/Graphic_Checker.git"
+  },
+  "keywords": [
+    "make",
+    "image"
+  ],
+  "author": "Jameleh Asaad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jameleh/Graphic_Checker/issues"
+  },
+  "homepage": "https://github.com/Jameleh/Graphic_Checker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "pureimage": "^0.3.8"
+  }
+}
